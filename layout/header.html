@@ -22,6 +22,41 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 	    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+    <style type="text/css">
+        .rota
+        {
+             -moz-transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);     
+        }
+
+        .sidebar-dark-red{
+            background: #E55353;
+        }
+
+        .sidebar-dark-red .sidebar-brand {
+            color: #fff;
+        }
+
+        .sidebar-dark-red .nav-item .nav-link {
+            color: rgba(255,255,255,.8);
+        }
+
+        .sidebar-heading {
+            color: #fff;
+        }
+
+        .active{
+            color: #fff;
+        }
+
+        .nav-item:hover .nav-link:hover {
+            color: #fff;
+        }
+
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -30,12 +65,12 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark-red accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-car-crash"></i>
+                    <i class="fas fa-car-crash rota"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">Ami<sup>Soft</sup></div>
             </a>
@@ -138,6 +173,25 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAsesores"
+                    aria-expanded="true" aria-controls="collapseAsesores">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Asesores</span>
+                </a>
+                <div id="collapseAsesores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Seleccione:</h6>
+                        <a class="collapse-item" href="#">Consultar</a>
+                        <a class="collapse-item" href="#">Nuevo</a>
+                        <!-- INTERES<div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>-->
+                      
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMecanicos"
                     aria-expanded="true" aria-controls="collapseMecanicos">
                     <i class="fas fa-user-cog"></i>
@@ -162,6 +216,24 @@
                     <span>Clientes</span>
                 </a>
                 <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Seleccione:</h6>
+                        <a class="collapse-item" href="#">Consultar</a>
+                        <a class="collapse-item" href="#">Nuevo</a>
+                        <!-- INTERES<div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>-->
+                      
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVehiculos"
+                    aria-expanded="true" aria-controls="collapseVehiculos">
+                    <i class="fas fa-car-side"></i>
+                    <span>Vehiculos</span>
+                </a>
+                <div id="collapseVehiculos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Seleccione:</h6>
                         <a class="collapse-item" href="#">Consultar</a>
